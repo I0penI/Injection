@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Injection.Model
 {
     public class YGame : BaseGame
-    {
+    { 
      
     }
 }

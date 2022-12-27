@@ -11,7 +11,7 @@ namespace Injection
             {
                 Second = 10
             };
-            YGame yGame = new YGame()
+            YGame yGame = new YGame() 
             {
                 Second = 5
             };
