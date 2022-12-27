@@ -2,11 +2,11 @@
 {
     public abstract class BaseGame : IGame
     {
-        protected int second;
-
-        public void Run()
+        public int Second { get; set; }
+       
+        public int Run()
         {
-            Console.WriteLine("Running...  wait " + second + " seconds.");
+            return Second;
         }
     }
 }

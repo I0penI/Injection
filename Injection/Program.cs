@@ -7,11 +7,18 @@ namespace Injection
     {
         static void Main(string[] args)
         {
-            XGame xGame = new XGame();
-            YGame yGame = new YGame();
+            XGame xGame = new XGame()
+            {
+                Second = 10
+            };
+            YGame yGame = new YGame()
+            {
+                Second = 5
+            };
 
-            xGame.Run();
-            yGame.Run();
+            Computer computer = new Computer(yGame);
+
+            computer.Run();
 
             
         }

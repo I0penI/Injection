@@ -9,7 +9,7 @@ namespace Injection.Abstracts
     public interface IGame
     {
 
-        public void Run();
+        int Run();
        
         
     }

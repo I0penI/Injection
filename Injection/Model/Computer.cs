@@ -7,8 +7,22 @@ using System.Threading.Tasks;
 
 namespace Injection.Model
 {
-    public class Computer : BaseGame
+    public class Computer 
     {
-    
+        public string Adi { get; set; }
+
+        private readonly BaseGame _game;
+public Computer(BaseGame game)
+        {
+            _game = game;
+        }
+
+        public Computer()
+        {
+        }
+        public void Run()
+        {
+            Console.WriteLine(_game.Run() +" saniyede çalışıyor" );
+        }
     }
 }
